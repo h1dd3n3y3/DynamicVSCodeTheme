@@ -1,4 +1,4 @@
-$dark_theme_hour_start = 13
+$dark_theme_hour_start = 17
 $light_theme_hour_start = 7
 
 $settings_json = $env:APPDATA + '\Code\User\settings.json'
@@ -22,14 +22,18 @@ $prefered_light_theme = $prefered_light_theme_object.Value # Get prefered light 
 if (($null -eq $prefered_dark_theme) -or ($null -eq $prefered_light_theme)) {
 
     if ($null -eq $prefered_dark_theme) {
+
         $settings_json + ': ''workbench.preferredDarkColorTheme'' missing or has empty value.'
 
     } elseif ($null -eq $prefered_light_theme) {
+
         $settings_json + ': ''workbench.preferredLightColorTheme'' missing or has empty value.'
     }
+    
 } else {
 
     if ($current_theme -eq $prefered_dark_theme) {
+
         if (($current_hour -ge $light_theme_hour_start) -and ($current_hour -lt $dark_theme_hour_start)) {
             
             'Dark theme is enabled.'
@@ -42,6 +46,7 @@ if (($null -eq $prefered_dark_theme) -or ($null -eq $prefered_light_theme)) {
         }
 
     } elseif ($current_theme -eq $prefered_light_theme) {
+
         if (($current_hour -ge $dark_theme_hour_start) -or ($current_hour -lt $light_theme_hour_start)) {
 
             'Light theme is enabled.'
