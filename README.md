@@ -2,8 +2,8 @@
 
 This PowerShell script automatically toggles between dark and light themes in Visual Studio Code based on the time of execution.
 
-- **Dark theme** activates after a specified hour.  
-- **Light theme** activates until the start of the dark theme.
+- **Dark theme** hour check from **17:00** to **06:59**.
+- **Light theme** hour check from **07:00** to **16:59**.
 
 ## Features
 
