@@ -16,8 +16,11 @@ This PowerShell script automatically toggles between dark and light themes in Vi
 To use this script, ensure you have the following:
 
 1. **Visual Studio Code**: Installed on your system.  
-2. **PowerShell Environment**: Compatible with both PowerShell 5.1 & 7 versions.  
-3. **Access to VS Code's settings.json**: Located at `%APPDATA%\Code\User\settings.json`.
+2. **PowerShell Environment**: Either PowerShell 5.1 or 7.  
+3. **Access to VS Code's settings.json**: Located under `%APPDATA%\Code\User\settings.json`.
+4. **Set preferred light & dark theme properties in settings.json:**
+      - `"workbench.preferredLightColorTheme"`
+      - `"workbench.preferredDarkColorTheme"`
 
 ## Usage
 
