@@ -22,7 +22,7 @@ To use this script, ensure you have the following:
 1. **Visual Studio Code**: Installed on your system.  
 2. **PowerShell Environment**: Either PowerShell 5.1 or 7.  
 3. **Access to VS Code's settings.json**: Located under `%APPDATA%\Code\User\settings.json`.
-4. **Set preferred light & dark theme properties in settings.json:**
+4. **Preferred light & dark theme properties in settings.json:**
       - `"workbench.preferredLightColorTheme"`
       - `"workbench.preferredDarkColorTheme"`
 
