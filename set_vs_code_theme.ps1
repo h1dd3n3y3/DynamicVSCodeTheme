@@ -6,7 +6,7 @@ $light_theme_hour_start = 7
 $settings_json = $env:APPDATA + '\Code\User\settings.json'
 
 $content = Get-Content $settings_json
-$content_custom_object = Get-Content -Raw $settings_json | ConvertFrom-Json # Convert single JSON Object (-Raw) to Custom Object (PSObject)
+$content_custom_object = Get-Content -Raw $settings_json | ConvertFrom-Json # Convert JSON (-Raw helps parse it correctly) to Custom Object (PSObject)
 
 $current_theme = $content_custom_object.'workbench.colorTheme' # Get current theme
 
