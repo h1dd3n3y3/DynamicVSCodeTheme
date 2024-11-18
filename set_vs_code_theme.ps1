@@ -8,14 +8,10 @@ $settings_json = $env:APPDATA + '\Code\User\settings.json'
 $content = Get-Content $settings_json
 $content_custom_object = Get-Content -Raw $settings_json | ConvertFrom-Json # Convert single JSON Object (-Raw) to Custom Object (PSObject)
 
-$current_theme_object = $content_custom_object.PSObject.Properties | Where-Object {$PSItem.Name -eq 'workbench.colorTheme'} # Get current theme NoteProperty
-$current_theme = $current_theme_object.Value # Get current theme value
+$current_theme = $content_custom_object.'workbench.colorTheme' # Get current theme
 
-$prefered_dark_theme_object = $content_custom_object.PSObject.Properties | Where-Object {$PSItem.Name -eq 'workbench.preferredDarkColorTheme'} # Get prefered dark theme NoteProperty
-$prefered_dark_theme = $prefered_dark_theme_object.Value # Get prefered dark theme value
-
-$prefered_light_theme_object = $content_custom_object.PSObject.Properties | Where-Object {$PSItem.Name -eq 'workbench.preferredLightColorTheme'} # Get prefered light theme NoteProperty
-$prefered_light_theme = $prefered_light_theme_object.Value # Get prefered light theme value
+$prefered_dark_theme = $content_custom_object.'workbench.preferredDarkColorTheme' # Get prefered dark theme
+$prefered_light_theme = $content_custom_object.'workbench.preferredLightColorTheme' # Get prefered light theme
 
 
 if (($null -eq $prefered_dark_theme) -or ($null -eq $prefered_light_theme)) {
