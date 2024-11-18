@@ -28,7 +28,7 @@ To use this script, ensure you have the following:
 
 ## Usage
 
-1. **Setup**: Save the script to a location on your system (e.g., `set_vs_code_theme.ps1`).  
+1. **Setup**: Save the script to a location on your system.
 2. **Run**: Execute the script in PowerShell:  
    ```
    powershell -Exec Bypass .\set_vs_code_theme.ps1
