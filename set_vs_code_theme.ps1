@@ -1,6 +1,8 @@
 $dark_theme_hour_start = 17
 $light_theme_hour_start = 7
 
+[int]$current_hour = (Get-Date).Hour
+
 $settings_json = $env:APPDATA + '\Code\User\settings.json'
 
 $content = Get-Content $settings_json
@@ -14,9 +16,6 @@ $prefered_dark_theme = $prefered_dark_theme_object.Value # Get prefered dark the
 
 $prefered_light_theme_object = $content_custom_object.PSObject.Properties | Where-Object {$PSItem.Name -eq 'workbench.preferredLightColorTheme'} # Get prefered light theme NoteProperty
 $prefered_light_theme = $prefered_light_theme_object.Value # Get prefered light theme value
-
-
-[int]$current_hour = (Get-Date).Hour
 
 
 if (($null -eq $prefered_dark_theme) -or ($null -eq $prefered_light_theme)) {
