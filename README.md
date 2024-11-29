@@ -1,20 +1,20 @@
 # VS Code Theme Toggle Script
 
-A PowerShell script to toggle between dark and light themes in Visual Studio Code based on the time of execution.  
+A PowerShell script to switch between preferred light and dark themes in Visual Studio Code based on the time of execution.  
 Pair that with Windows Task Scheduler and let the automation begin! 💯💪✈️
 
 ## Features
 
 - Detects and updates the current theme in your VS Code settings.  
 - Works seamlessly with your existing VS Code setup.  
-- Customizable time thresholds for dark and light themes.
+- Customizable time thresholds for light and dark themes.
 
 ## Defaults
 
 By default the script utilizes the below hour toggles:
 
-- **Dark theme:** 17:00.
 - **Light theme:** 07:00.
+- **Dark theme:** 17:00.
 
 ## Requirements
 
