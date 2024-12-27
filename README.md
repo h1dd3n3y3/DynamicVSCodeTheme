@@ -32,5 +32,4 @@ To use this script, ensure you have the following:
 1. **Setup**: Save the script to a location on your system.
 2. **Run**: Execute the script in PowerShell:  
    ```
-   powershell -Exec Bypass .\set_vs_code_theme.ps1
- 
+   powershell -Exec Bypass .\set_vs_code_theme.ps1 
