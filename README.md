@@ -26,7 +26,7 @@ To use this script, ensure you have the following:
 4. **Preferred light & dark theme properties in settings.json:**
       - `"workbench.preferredLightColorTheme"`
       - `"workbench.preferredDarkColorTheme"`
-5. **Check JSON doesn't end with any commas.**  
+5. **Check Settings JSON doesn't end with any commas.**  
       - **It should <ins>NOT</ins> be like:**
         ```
             {
