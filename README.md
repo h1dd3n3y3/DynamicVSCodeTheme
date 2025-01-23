@@ -32,8 +32,7 @@ To use this script, ensure you have the following:
             {
                "this": "that",
                "some": "more",
-            }
-```
+            }```
 
 ## Usage
 
